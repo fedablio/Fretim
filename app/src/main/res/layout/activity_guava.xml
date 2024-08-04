@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="ID (compartilhado):"
+                android:textColor="#FF0000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etIdGuava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:enabled="false"
+                android:hint="Ex.: FUL001"
+                android:inputType="text"
+                android:maxLength="45"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@layout/cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Senha: *"
+                android:textColor="#FF0000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etSenhaMotociclistaGuava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:hint="De 4 a 32 caracteres"
+                android:inputType="textPassword"
+                android:maxLength="32"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@layout/cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="E-mail: *"
+                android:textColor="#FF0000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etEmailGuava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:hint="Ex.: fulano@dominio.com"
+                android:inputType="text"
+                android:maxLength="45"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@layout/cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Telefone: *"
+                android:textColor="#FF0000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etTelefoneGuava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:hint="Ex.: 41999999999"
+                android:inputType="number"
+                android:maxLength="25"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@layout/cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Preço por quilômetro (R$): *"
+                android:textColor="#FF0000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etPrecoKiloGuava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:hint="Ex.: 0.99 (não pode ser zero)"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@layout/cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Preço mínimo (R$): *"
+                android:textColor="#FF0000"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etPrecoMiniGuava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:hint="Ex.: 9.99 (pode ser zero ou mais)"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@layout/cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Logradouro (origem fixa):"
+                android:textColor="#0000FF"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etLogradouroGuava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:hint="Ex.: Sete de Setembro"
+                android:inputType="text"
+                android:maxLength="45"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@layout/cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Número (origem fixa):"
+                android:textColor="#0000FF"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etNumeroGuava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:hint="Ex.: 100"
+                android:inputType="number"
+                android:maxLength="5"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@layout/cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Bairro (origem fixa):"
+                android:textColor="#0000FF"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etBairroGuava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:hint="Ex.: Rebouças"
+                android:inputType="text"
+                android:maxLength="45"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@layout/cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Cidade (origem fixa):"
+                android:textColor="#0000FF"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etCidadeGuava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:hint="Ex.: Curitiba"
+                android:inputType="text"
+                android:maxLength="45"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@layout/cursor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="UF (origem fixa):"
+                android:textColor="#0000FF"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/etUfGuava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:hint="Ex.: PR"
+                android:inputType="text"
+                android:maxLength="2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:textCursorDrawable="@layout/cursor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btLimparGuava"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@layout/botao"
+                    android:textColor="#FFFFFF"
+                    android:onClick="limpar_guava"
+                    android:text="Limpar"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btAlterarGuava"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@layout/botao"
+                    android:textColor="#FFFFFF"
+                    android:onClick="alterar_guava"
+                    android:text="Alterar"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

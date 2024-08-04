@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:text="Endereço da origem"
+                android:textColor="#FF0000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etOrigemApple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:focusable="true"
+                android:hint="Ex.: Rua Tal, 100, Bairro, Cidade, UF"
+                android:inputType="text"
+                android:maxLength="45"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:textColorHint="#C0C0C0"
+                android:textCursorDrawable="@layout/cursor" />
+
+            <CheckBox
+                android:id="@+id/cbOrigemApple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:text="Origem (fixa)"
+                android:textColor="#0000FF"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:text="Endereço do destino"
+                android:textColor="#FF0000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etDestinoApple"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FDF5E6"
+                android:hint="Ex.: Rua Tal, 100, Bairro, Cidade, UF"
+                android:inputType="text"
+                android:maxLength="45"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                android:textColorHint="#C0C0C0"
+                android:textCursorDrawable="@layout/cursor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btLimparApple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@layout/botao"
+                    android:textColor="#FFFFFF"
+                    android:onClick="limpar_apple"
+                    android:text="Limpar"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btExecutarApple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@layout/botao"
+                    android:textColor="#FFFFFF"
+                    android:onClick="inserir_apple"
+                    android:text="Simular"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

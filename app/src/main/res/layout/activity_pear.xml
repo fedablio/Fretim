@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUserPear"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FDF5E6"
+            android:hint="Usuário (Ex.: fulano)"
+            android:inputType="text"
+            android:maxLength="10"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#C0C0C0"
+            android:textCursorDrawable="@layout/cursor" />
+
+        <EditText
+            android:id="@+id/etPassPear"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FDF5E6"
+            android:hint="Senha (Ex.: onaluf)"
+            android:inputType="textPassword"
+            android:maxLength="32"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#C0C0C0"
+            android:textCursorDrawable="@layout/cursor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btLimparPear"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@layout/botao"
+                android:textColor="#FFFFFF"
+                android:onClick="limpar_pear"
+                android:text="Limpar"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btAutenticarPear"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@layout/botao"
+                android:textColor="#FFFFFF"
+                android:onClick="autenticar_pear"
+                android:text="Entrar"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

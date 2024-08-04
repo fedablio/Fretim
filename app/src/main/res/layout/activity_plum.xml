@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Protocolo:"
+            android:textColor="#FF0000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etProtocoloPlum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FDF5E6"
+            android:hint="Ex.: FUL1231629074174748"
+            android:inputType="text"
+            android:maxLength="30"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#C0C0C0"
+            android:textCursorDrawable="@layout/cursor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Origem:"
+            android:textColor="#008000"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etOrigemPlum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FDF5E6"
+            android:hint="Ex.: guarapu"
+            android:inputType="text"
+            android:maxLength="50"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#C0C0C0"
+            android:textCursorDrawable="@layout/cursor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Destino:"
+            android:textColor="#A52A2A"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/etDestinoPlum"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FDF5E6"
+            android:hint="Ex.: guarapu"
+            android:inputType="text"
+            android:maxLength="50"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#000000"
+            android:textColorHint="#C0C0C0"
+            android:textCursorDrawable="@layout/cursor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Data:"
+            android:textColor="#0000FF"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etData1Plum"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#FDF5E6"
+                android:editable="false"
+                android:hint="Dois cliques"
+                android:inputType="none"
+                android:maxLength="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#808080"
+                android:textColorHint="#C0C0C0" />
+
+            <EditText
+                android:id="@+id/etData2Plum"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="#FDF5E6"
+                android:editable="false"
+                android:hint="Dois cliques"
+                android:inputType="none"
+                android:maxLength="10"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#808080"
+                android:textColorHint="#C0C0C0" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbPesquisaUm"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="4"
+                android:checked="true"
+                android:text="Protocolo"
+                android:textColor="#FF0000"
+                android:textSize="16dp" />
+
+
+            <RadioButton
+                android:id="@+id/rbPesquisaDois"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="4"
+                android:text="Origem"
+                android:textColor="#008000"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/rbPesquisaTres"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="4"
+                android:text="Destino"
+                android:textColor="#A52A2A"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/rbPesquisaQuatro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="4"
+                android:text="Data"
+                android:textColor="#0000FF"
+                android:textSize="16dp" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btLimparPlum"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@layout/botao"
+                android:textColor="#FFFFFF"
+                android:onClick="limpar_plum"
+                android:text="Limpar"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btExecutarPlum"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@layout/botao"
+                android:textColor="#FFFFFF"
+                android:onClick="executar_plum"
+                android:text="Pesquisar"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lvCorridaPlum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

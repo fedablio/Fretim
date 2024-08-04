@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnAdministracaoApple"
+        android:alphabeticShortcut="a"
+        android:orderInCategory="101"
+        android:title="Administração"
+        android:titleCondensed="Administração"></item>
+
+    <item
+        android:id="@+id/mnSairApple"
+        android:alphabeticShortcut="s"
+        android:orderInCategory="102"
+        android:title="Sair"
+        android:titleCondensed="Sair"></item>
+
+</menu>

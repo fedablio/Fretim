@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Informações"
+                android:textColor="#FF0000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="Aplicativo destinado a gerar valores de frete ou pequenas entregas. Tem a possibilidade de gerar um frete com valor mínimo e preço por quilômetro, somente com preço por quilômetro ou ambos."
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="Ele depende do funcionamento de serviços de servidores terceirizados como MAPAS e BANCO DE DADOS. A indisponibilidade de um dos citados, leva ao não funcionamento deste aplicativo."
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="Há arrendondamento na DISTÂNCIA (Km). Ex.: se um frete retornou uma distância de 385 metros (0.385 Km), este valor é arredondado para 400 metros (0.4 Km)."
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="A velocidade da conexão (3G, 4G, 5G, Wi-fi e afins), também ipacta no tempo em que o valor do frete é gerado."
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/fedablio_sobre" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
